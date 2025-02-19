@@ -170,6 +170,39 @@
   </footer>
 
 
-  <SCript src="./JS/myjs.js"></SCript>
+  <script>
+    const imageEle=document.getElementById("skill-image")
+       
+
+       let images=[
+           {
+               path:'./Resources/hp certi_page-0001.jpg',
+           caption:'Sunset In Maharashtra'
+           },
+           {
+               path:'./Resources/JavaFullStack.jpg',
+               caption:'Sunset in UP'
+           },
+           {
+               path:'./Resources/UdemyCert.jpg',
+               caption:'Sunset In Mumbai'
+           }
+           
+       ]
+       let i=0;
+       window.setInterval(()=>{
+           const ImageObject=images[i];
+           imageEle.src=ImageObject.path;
+           imageEle.alt=imageEle.caption;
+           i++;
+           if(i==images.length)
+           i=0;
+           
+       },3000);
+       
+       
+       
+       
+  </script>
 </body>
 </html>
