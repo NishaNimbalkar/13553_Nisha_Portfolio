@@ -1,0 +1,504 @@
+*{
+    padding:0;
+    margin: 0px;
+    
+    
+}
+#bg-video {
+    position: absolute; /* Position the video behind everything */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* margin-bottom: 300px; */
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send the video behind all content */
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(18,18,62);
+    color: white;
+    position: fixed; /* Fixes the nav bar to the top */
+    top: 0; /* Keeps it at the top */
+    left: 0; /* Aligns it to the left side */
+    width: 100%; /* Ensures it takes up the full width */
+    z-index: 10; /* Makes sure it's above other elements */
+}
+
+/* #myimg{
+    visibility: hidden;
+} */
+#ullist{
+    display: flex;
+    justify-content: center;
+    
+}
+#ullist a{
+  
+    color:white;
+    text-decoration: none;;
+   
+}
+#ullist li{
+    list-style: none;
+    margin: 0 35px;
+    
+}
+#ullist li a:hover{
+     background-color: white;
+     color: black;
+     width:100px;
+     height: 100px;
+     /* border-radius: 20px; */
+}
+#leftnav b{
+    color: purple;
+}
+#leftnav{
+    font-size: 40px;
+    font-style: italic;
+    
+}
+#section1{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+    opacity: 0.8;
+   
+}
+#para{
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 150px;
+    
+    line-height: 80px;
+    color: white;
+    /* transition: 3s; */
+}
+#para b{
+    font-size: 40px;
+    color: #007bff;
+}
+ /* #imagesection{
+    width: 350px;
+    height: 350px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+
+}  */
+
+
+#resumeButton{
+    width: 150px;
+    
+    height: 50px;
+    background-color:#45a049;
+    border-radius: 10px;
+    margin-left: 640px;
+    margin-bottom: 0;
+   
+}
+#resumeButton:hover{
+    background-color:#007bff;
+
+}
+
+
+#About {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 150px;
+    padding: 20px;
+    height: 700px;
+    background-color: #f4f4f9; /* A soft background color */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow */
+}
+
+
+
+#about-image {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    transition: 3s;
+}
+#about-image:hover{
+     transform: scale(1.1);
+}
+
+#About p {
+    flex: 1;
+    font-size: 22px;
+    /* font-weight: bold; */
+    line-height: 2;
+    max-width: 100%;
+    margin:50px;
+    color: #333; /* Darker text color for better contrast */
+}
+#About p b{
+    font-size: 30px;
+    color: #007bff;
+}
+/* General Layout */
+.ThirdSection {
+    padding: 50px 10px;
+    text-align: center;
+    margin-top: 30px;
+     height: 520px;
+}
+
+.ThirdSection h1 {
+    font-size: 45px;
+    margin-top: 20px;
+   
+}
+
+#skillset {
+    display: flex;
+    justify-content: space-between; /* Center the content horizontally */
+    align-items: center; /* Aligns the items vertically */
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #f4f4f9; /* Soft background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
+}
+
+/* Styling for the skills-column */
+#skills-column {
+    width: 50%; /* Adjust the width of the skills column */
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap in case the window is narrow */
+    justify-content: space-around; /* Space the items evenly */
+    align-items: center; /* Vertically center the items */
+}
+
+.skill {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100px; /* Adjust width of each skill block */
+}
+
+.skill img {
+    width: 60px; /* Size of each skill image */
+    height: 60px;
+    margin-bottom: 10px; /* Spacing between image and title */
+    transition: 3sec;
+}
+.skill img:hover{
+    transform: scale(1.08);
+}
+
+.skill h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Styling for the skill-image-column */
+#skill-image-column {
+    width: 37%; /* Fixed width for the image column */
+    padding-right: 50px;
+}
+
+#skill-image {
+    width: 100%; /* Make the image fill the column */
+    height: 300px;
+     
+    object-fit: cover;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* General layout for the section */
+.FourthSection {
+    padding: 50px;
+    text-align: center;
+    height: 520px;
+}
+
+.FourthSection h1 {
+    font-size: 2.5em;
+    margin-top: 50px;
+    
+    
+}
+
+/* Grid container for the projects */
+.project-grid{
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 35px;
+    margin-top: 50px;
+    margin-left: auto;
+    
+}
+
+/* Styling each project item */
+.project-item{
+    background-color: #f4f4f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    transition: 2s;
+}
+  .project-item:hover{
+    transform: scale(1.05);
+  }
+
+/* Project title styling */
+.project-details h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Project description text styling */
+.project-details p {
+    font-size: 1.3em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* General Form Styling */
+
+.FifthSection{
+    text-align: center;
+    font-size: 1.9em;
+    height: 520px;
+    margin-top: 80px;
+}
+.contact-form {
+    
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: 3s;
+  }
+  .contact-form:hover{
+      transform: scale(1.08);
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    display: block;
+     margin-top: 20px;
+    
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Social Links Section */
+  #contact-item{
+    width: 100%;
+    height: 80px;
+   
+    background-color:rgb(56, 56, 82);
+    
+    /* margin-top: 0;
+    padding: 0%; */
+  }
+
+  
+  .social-links {
+    display: flex;
+    
+    margin-top: 15px;
+    justify-content: center;
+   
+  }
+  
+  .social-links a img {
+    width: 40px;
+    height: 40px;
+      padding: 9px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    border-radius: 50%;
+    margin:0%;
+   
+    
+  }
+  footer p{
+    text-align: center;
+    color: white;
+  }
+  .social-links a img:hover {
+    transform: scale(1.1);
+  }
+  
+
+  
+ 
+
+  /* Styles for smaller screens (mobile) */
+   @media (max-width: 767px) { 
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    #leftnav {
+        font-size: 24px; /* Smaller logo */
+        margin-bottom: 10px; /* Space below logo */
+        margin-left: 10px;
+    }
+    #ullist {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+    #ullist li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    #ullist li a:hover {
+        width: 100%;  /* Full width on hover */
+        border-radius: 0; /* No border-radius on mobile */
+        padding: 10px; /* Add some padding */
+    }
+    #section1 {
+        flex-direction: column;
+        align-items: center; /* Center content */
+        margin: 20px 0; /* Reduced margin */
+    }
+    #para {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+    #para b {
+        font-size: 25px;
+    }
+    #resumeButton {
+        margin: 20px auto; /* Center the button */
+        width: 90%; /* Button takes more width */
+    }
+    #About {
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    }
+    #about-image {
+        width: 90%; 
+        margin: 10px auto; /* Center the image */
+        display: block;
+    }
+    #About p {
+        font-size: 18px;
+        margin: 20px;
+    }
+    .ThirdSection {
+        height: auto; /* Height auto */
+    }
+    .ThirdSection h1 {
+        font-size: 30px;
+    }
+    #skillset {
+        flex-direction: column;
+        padding: 20px;
+    }
+    #skills-column {
+        width: 100%;
+    }
+    .skill {
+        width: 45%; /* Two skills per row */
+        margin-bottom: 20px;
+    }
+    #skill-image-column {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .FourthSection {
+        height: auto;
+    }
+    .FourthSection h1 {
+        font-size: 2em;
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    .project-item {
+        padding: 20px;
+    }
+    .project-details h2 {
+        font-size: 1.2em;
+    }
+    .project-details p {
+        font-size: 1em;
+    }
+    .FifthSection {
+        height: auto;
+        font-size: 1.5em;
+    }
+    .contact-form {
+        max-width: 95%;
+    }
+    .form-group label {
+        font-size: 16px;
+    }
+    .form-group input {
+        font-size: 14px;
+    }
+    .social-links {
+        flex-direction: row; /* Keep the links in a row */
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .social-links a {
+        margin: 0 10px; /* Add some space between the icons */
+    }
+    .social-links a img {
+        width: 30px;
+        height: 30px;
+    }
+}
