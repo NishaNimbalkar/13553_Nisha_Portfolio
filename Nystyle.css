@@ -26,7 +26,7 @@ nav {
     top: 0; /* Keeps it at the top */
     left: 0; /* Aligns it to the left side */
     width: 100%; /* Ensures it takes up the full width */
-    z-index: 10; /* Makes sure it's above other elements */
+    z-index: 10; 
 }
 
 /* #myimg{
@@ -87,15 +87,17 @@ nav {
 
 
 #resumeButton{
-    width: 150px;
-    height: 70px;
+    width: 130px;
+    height: 50px;
     background-color:#45a049;
     border-radius: 10px;
     display: block;
     /* left: 300px; */
     margin: auto;
 }
-
+div a{
+    text-decoration: none;
+}
 /* #resumeButton{
     width: 150px;
     
@@ -117,11 +119,14 @@ nav {
 
 #About {
     display: flex;
+    flex-direction: row;
+
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     margin-top: 150px;
     padding: 20px;
-    height: 700px;
+    width: 100%;
+    height: auto;
     background-color: #f4f4f9; /* A soft background color */
     border-radius: 10px; /* Optional: rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow */
@@ -156,10 +161,12 @@ nav {
 }
 /* General Layout */
 .ThirdSection {
+    display: inline-block;
+    /* width: 100%; */
+    height: auto;
     padding: 50px 10px;
     text-align: center;
-    margin-top: 30px;
-     height: 520px;
+    
 }
 
 .ThirdSection h1 {
@@ -170,6 +177,7 @@ nav {
 
 #skillset {
     display: flex;
+    flex-direction: row;
     justify-content: space-between; /* Center the content horizontally */
     align-items: center; /* Aligns the items vertically */
     margin-top: 50px;
@@ -251,11 +259,11 @@ nav {
 /* Styling each project item */
 .project-item{
     background-color: #f4f4f9;
-    padding: 40px;
+   
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: left;
     transition: 2s;
@@ -296,10 +304,10 @@ nav {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: 3s;
   }
-  .contact-form:hover{
+  /* .contact-form:hover{
       transform: scale(1.08);
   }
-  
+   */
   /* Form Group Styling */
   .form-group {
     display: block;
