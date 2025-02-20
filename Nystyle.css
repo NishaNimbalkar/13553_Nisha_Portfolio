@@ -95,20 +95,9 @@ nav {
     /* left: 300px; */
     margin: auto;
 }
-
-/* #resumeButton{
-    width: 150px;
-    
-    height: 50px;
-    background-color:#45a049;
-    border-radius: 10px;
-    /* margin-left: 640px;
-    text-align: center; 
-    position: relative;
-    left: auto;
-    margin-bottom: 0;
-   
-} */
+ a{
+    text-decoration: none;
+}
 #resumeButton:hover{
     background-color:#007bff;
 
@@ -230,7 +219,7 @@ nav {
 .FourthSection {
     padding: 50px;
     text-align: center;
-    height: 520px;
+    /* height: 520px; */
 }
 
 .FourthSection h1 {
@@ -286,21 +275,30 @@ nav {
     text-align: center;
     font-size: 1.9em;
     height: 520px;
-    margin-top: 80px;
+    display: block;
+    position: relative;
+    top: 90px;
+    /* margin-top: 150px; */
+}
+.FifthSection h1{
+    display: block;
+    
 }
 .contact-form {
-    
-    max-width: 500px;
-    margin: 40px auto;
+      display: block;
+      
+    max-width: 400px;
+    margin:auto;
+    /* bottom: 10px; */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: 3s;
+    /* transition: 3s; */
   }
-  .contact-form:hover{
+  /* .contact-form:hover{
       transform: scale(1.08);
-  }
+  } */
   
   /* Form Group Styling */
   .form-group {
@@ -346,9 +344,9 @@ nav {
   
   /* Social Links Section */
   #contact-item{
-    width: 100%;
-    height: 80px;
-   
+    /* width: 100%;
+    height: 60px; 
+      margin: 0;  */
     background-color:rgb(56, 56, 82);
     
     /* margin-top: 0;
